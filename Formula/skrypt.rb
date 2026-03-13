@@ -1,8 +1,8 @@
 class Skrypt < Formula
   desc "AI-powered documentation generator with code examples"
   homepage "https://skrypt.sh"
-  url "https://registry.npmjs.org/skrypt-ai/-/skrypt-ai-0.3.0.tgz"
-  sha256 "f0032c633a42e21184d000249cdc752f805881139044a0c3c49b4dad3eff4f57"
+  url "https://registry.npmjs.org/skrypt-ai/-/skrypt-ai-0.3.1.tgz"
+  sha256 "063b1fd7efbfa3fffa082d5f656edd85cd6836095fc5f342b366419d09b0abef"
   license "Elastic-2.0"
 
   depends_on "node"
@@ -13,6 +13,6 @@ class Skrypt < Formula
   end
 
   test do
-    assert_match "0.3.0", shell_output("#{bin}/skrypt --version")
+    assert_match "0.3.1", shell_output("#{bin}/skrypt --version")
   end
 end
